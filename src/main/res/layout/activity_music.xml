@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MusicActivity">
+
+    <ImageView
+        android:id="@+id/iv_music"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:src="@drawable/img2" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#35616e"
+        android:text="歌曲名"
+        android:textSize="20sp"/>
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4e8ea2"
+            android:text="00:00"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#4e8ea2"
+            android:text="00:00"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_start"
+            android:text="播放音乐"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_stop"
+            android:text="暂停播放"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_continue_play"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_ctn"
+            android:text="继续播放"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_exit"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_ret"
+            android:text="退出"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_pre"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_pre"
+            android:text="上一首"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/btn_null"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/music_next"
+            android:text="下一首"
+            android:textColor="#35616e"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</LinearLayout>
